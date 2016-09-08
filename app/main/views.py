@@ -78,7 +78,6 @@ def post_edit(id):
     form.body.data = post.body
     return render_template('post_edit.html', forms=form)
 
-<<<<<<< HEAD
 @main.route('/ckupload/', methods=['OPTIONS', 'POST'])
 def ckupload():
     error = ''
@@ -115,8 +114,6 @@ def ckupload():
     response = make_response(res)
     response.headers["Content-Type"] = "text/html"
     return response
-=======
->>>>>>> heroku/master
 
 @main.route('/posts/remove/<int:id>')
 @login_required
@@ -143,11 +140,8 @@ def post_publish(id):
     post.published_date = datetime.utcnow()
     return redirect(url_for('.index'))
 
-<<<<<<< HEAD
-=======
 
 @main.route('/comment', methods=['GET', 'POST'])
 def post_comment():
     form = CommentForm()
     return render_template('auth/login.html', comment_forms=form)
->>>>>>> heroku/master
