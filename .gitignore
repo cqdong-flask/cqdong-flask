@@ -2,5 +2,9 @@
 __pycache__
 migrations
 data-dev.sqlite
+<<<<<<< HEAD
 .sqlite
 .pyc
+=======
+.pyc
+>>>>>>> heroku/master
