@@ -1,1 +1,0 @@
-from CBlog import app as application
